@@ -8,7 +8,7 @@ private:
 public:
 	Zlava();
 	~Zlava();
-	void uplatniZlavu(Kosik * k);
+	bool uplatniZlavu(Kosik * k);
 	void setZlava(double pZlava) { zlava = pZlava; }
 	int getZlava() { return this->zlava; }
 };

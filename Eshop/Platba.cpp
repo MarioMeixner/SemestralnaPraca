@@ -1,6 +1,8 @@
 #include "Platba.h"
+#include <string>
+#include <iostream>
 
-
+using namespace std;
 
 Platba::Platba()
 {
@@ -14,12 +16,11 @@ Platba::~Platba()
 void Platba::zaplatit(Kosik * k)
 {
 	bool loop = true;
-	int cisloKarty;
+	string cisloKarty;
 	int datumKarty;
 	int cvcKarty;
 	if (!k->jePrazdny())
 	{
-		k->getCenaKosika();
 		cout << "Celkovo k uhrade: " << k->getKUhrade() << "e" << endl;
 		cout << "Vyplnte prosim udaje o vasej platobnej karte " << endl;
 		while (loop)
@@ -30,7 +31,7 @@ void Platba::zaplatit(Kosik * k)
 			cin >> datumKarty;
 			cout << "CVC2/CVV2: ";
 			cin >> cvcKarty;
-			if (numDigits(datumKarty) == 4 && numDigits(cvcKarty) == 3)
+			if (cisloKarty.length() == 16 && numDigits(datumKarty) == 4 && numDigits(cvcKarty) == 3)
 			{
 				cout << "Platba prebehla uspesne, dakujeme za Vas nakup." << endl;
 				loop = false;

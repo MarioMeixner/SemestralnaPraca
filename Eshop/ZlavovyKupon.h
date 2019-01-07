@@ -9,6 +9,6 @@ class ZlavovyKupon : public Zlava
 public:
 	ZlavovyKupon();
 	~ZlavovyKupon();
-	bool jePlatny(string kod, Kosik * k);
+	bool uplatniZlavu(string kod, Kosik * k);
 };
 

@@ -10,15 +10,19 @@ ZlavovyKupon::~ZlavovyKupon()
 {
 }
 
-bool ZlavovyKupon::jePlatny(string kod, Kosik * k)
+bool ZlavovyKupon::uplatniZlavu(string kod, Kosik * k)
 {
 	if (kod.length() == 8) {
 		Zlava::setZlava(0.05);
+
+		Zlava::uplatniZlavu(k);
+		return true;
+		/*
 		k->getCenaKosika();
 		cout << "Zlava bola uplatnena, povodna cena: " << k->getKUhrade() << "e, ";
 		Zlava::uplatniZlavu(k);
 		cout << "cena po zlavneni: " << k->getKUhrade() << "e, " << endl;
-		return true;
+		*/
 	}
 	else {
 		cout << "Neplatny kod!" << endl;

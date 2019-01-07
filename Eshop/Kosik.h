@@ -19,6 +19,7 @@ public:
 	void vypisKosik();
 	int getCenaKosika();
 	int getKUhrade() { return this->suma; }
+	void setKUhrade(int pSuma) { this->suma = pSuma; }
 	void setCenaKosika(int cena);
 };
 
