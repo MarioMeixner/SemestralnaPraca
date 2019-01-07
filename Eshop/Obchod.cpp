@@ -10,7 +10,6 @@ Obchod::Obchod()
 Obchod::~Obchod()
 {
 	vector<Tovar>().swap(sklad);
-	delete this;
 }
 
 void Obchod::naplnSklad()

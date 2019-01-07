@@ -1,5 +1,6 @@
 ﻿  Main.cpp
-  Platba.cpp
-  Zlava.cpp
+c:\users\mariu\source\repos\eshop\eshop\zlava.h(13): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  StudentskaZlava.cpp
+c:\users\mariu\source\repos\eshop\eshop\zlava.h(13): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   Generating Code...
   Eshop.vcxproj -> C:\Users\mariu\source\repos\Eshop\Debug\Eshop.exe

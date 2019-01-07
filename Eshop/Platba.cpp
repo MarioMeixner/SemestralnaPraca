@@ -19,7 +19,8 @@ void Platba::zaplatit(Kosik * k)
 	int cvcKarty;
 	if (!k->jePrazdny())
 	{
-		cout << "Celkovo k uhrade: " << k->getCenaKosika() << "e" << endl;
+		k->getCenaKosika();
+		cout << "Celkovo k uhrade: " << k->getKUhrade() << "e" << endl;
 		cout << "Vyplnte prosim udaje o vasej platobnej karte " << endl;
 		while (loop)
 		{

@@ -2,12 +2,17 @@
 
 
 
-Zlava::Zlava(double pZlava)
+Zlava::Zlava()
 {
-	zlava = pZlava;
 }
 
 
 Zlava::~Zlava()
 {
+}
+
+void Zlava::uplatniZlavu(Kosik * k)
+{
+	int cislo = (int)(k->getCenaKosika() * this->zlava);
+	k->setCenaKosika(cislo);
 }

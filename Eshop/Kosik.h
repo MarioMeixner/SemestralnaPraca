@@ -8,6 +8,7 @@ class Kosik
 {
 private:
 	vector<Tovar> kosik;
+	int suma;
 public:
 	Kosik();
 	~Kosik();
@@ -17,5 +18,7 @@ public:
 	bool jePrazdny();
 	void vypisKosik();
 	int getCenaKosika();
+	int getKUhrade() { return this->suma; }
+	void setCenaKosika(int cena);
 };
 

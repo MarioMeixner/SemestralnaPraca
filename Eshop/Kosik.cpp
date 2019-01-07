@@ -7,6 +7,7 @@ using namespace std;
 
 Kosik::Kosik()
 {
+	this->suma = 0;
 }
 
 
@@ -50,11 +51,17 @@ void Kosik::vypisKosik()
 
 int Kosik::getCenaKosika()
 {
-	int suma = 0;
+	int cena = 0;
 	for (Tovar t : kosik)
 	{
-		suma += t.getCena();
+		cena += t.getCena();
 	}
-	return suma;
+	this->suma = cena;
+	return this->suma;
+}
+
+void Kosik::setCenaKosika(int cislo)
+{
+	this->suma -= cislo;
 }
 
